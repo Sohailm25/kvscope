@@ -1,0 +1,6 @@
+# ABOUTME: Development dependencies for KVScope.
+# ABOUTME: Install this after requirements.txt for local validation and hooks.
+
+-r requirements.txt
+pre-commit==4.5.1
+Pillow==12.1.1

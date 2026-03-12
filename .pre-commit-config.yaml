@@ -1,0 +1,30 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.45.0
+    hooks:
+      - id: markdownlint
+        args:
+          - --disable
+          - MD013
+  - repo: local
+    hooks:
+      - id: repo-readiness
+        name: repo-readiness
+        entry: bash -lc 'cd Documents/sohail/interview/project && .venv/bin/python scripts/validate_repo_readiness.py'
+        language: system
+        pass_filenames: false
+      - id: repo-unit-tests
+        name: repo-unit-tests
+        entry: bash -lc 'cd Documents/sohail/interview/project && .venv/bin/python -m unittest discover -s tests'
+        language: system
+        pass_filenames: false

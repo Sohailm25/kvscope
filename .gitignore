@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.DS_Store
+.tldr/
+*.sqlite3
+
+# Large artifacts (reproduced via scripts)
+artifacts/figures/
+artifacts/manifests/
+artifacts/runs/
+
+# Claude Code workspace cache
+.claude/cache/
+.claude/tsc-cache/
+
+# Local tooling
+.tldrignore
+$TMP_DB

@@ -1,0 +1,196 @@
+# KVScope Research Card
+# Generated: 2026-03-12
+# Verified against source manifests and frozen claims
+
+title: "KVScope: Cache-Aware AI Observability Lab"
+status: complete  # Core v1 claim surface frozen 2026-03-11
+visibility: private  # Research project
+owners:
+  - sohail_mohammad
+
+source_repo: "."
+
+entrypoints:
+  - serve/modal_vllm_app.py          # Live vLLM serving on Modal with Prometheus scraping
+  - kvtrace/trace_builder.py          # Derives block-level cache traces from live runs
+  - kvtrace/replay.py                 # Replays derived traces through LRU/FIFO/LFU simulators
+  - scripts/build_replay_capacity_sweep.py  # Capacity sweep across policies
+  - scripts/build_core_v1_claim_manifest.py # Frozen claim surface builder
+  - kvscope_mcp/server.py             # Read-only MCP server over frozen evidence corpus
+
+summary: >
+  KVScope instruments vLLM on Modal to study how KV cache policy and workload
+  geometry interact in single-replica LLM serving. It derives block-level traces
+  from live request structure and replays them through textbook LRU/FIFO/LFU
+  simulators at varying cache capacities. The headline finding is a capacity
+  crossover where the optimal eviction policy flips depending on cache budget and
+  workload family. All claims are directional on small N (2-4 runs per family)
+  and derived traces simulate block access patterns, not vLLM kernel state.
+
+key_results:
+
+  - id: capacity-crossover-locality-return
+    claim: >
+      On locality-return workloads, LRU beats LFU at cache capacities 2-3,
+      then LFU overtakes LRU at capacity 4. The optimal eviction policy flips
+      with cache budget.
+    numbers:
+      capacity_2: { lru: 0.333, lfu: 0.209 }
+      capacity_3: { lru: 0.459, lfu: 0.396 }
+      capacity_4: { lru: 0.459, lfu: 0.521 }
+    N: 3 runs (baseline + concentrated geometry variants)
+    claim_class: repeated
+    evidence:
+      - artifacts/manifests/20260311-221202__kvtrace__sweep__replay-capacity-sweep-policy-surface-core-v1-complete.md
+      - artifacts/manifests/20260311-221148__kvtrace__bridge__bridge-policy-surface-core-v1-complete.md
+    verified: true
+    note: >
+      Result bundle states "4 live-derived traces" but the sweep manifest lists
+      3 runs for locality-return. The 3-run count from the manifest is used here
+      as the directly verifiable N.
+
+  - id: hotset-scan-lfu-dominance
+    claim: >
+      hotset-scan consistently shows LFU > LRU > FIFO across cache capacities
+      2-5 in replay.
+    numbers:
+      native_capacity: { fifo: 0.209, lru: 0.271, lfu: 0.375 }
+      capacity_2: { fifo: 0.188, lru: 0.271, lfu: 0.333 }
+      capacity_5: { fifo: 0.333, lru: 0.354, lfu: 0.438 }
+    N: 3 runs
+    claim_class: repeated
+    evidence:
+      - artifacts/manifests/20260311-221202__kvtrace__sweep__replay-capacity-sweep-policy-surface-core-v1-complete.md
+      - artifacts/manifests/20260311-221148__kvtrace__bridge__bridge-policy-surface-core-v1-complete.md
+    verified: true
+
+  - id: locality-shift-recency-advantage
+    claim: >
+      locality-shift consistently shows LRU > LFU across capacities 2-5,
+      demonstrating a recency advantage after locality shifts.
+    numbers:
+      native_capacity: { fifo: 0.25, lru: 0.375, lfu: 0.188 }
+      capacity_2: { fifo: 0.25, lru: 0.375, lfu: 0.188 }
+      capacity_5: { fifo: 0.625, lru: 0.625, lfu: 0.5 }
+    N: 2 runs
+    claim_class: repeated
+    evidence:
+      - artifacts/manifests/20260311-221202__kvtrace__sweep__replay-capacity-sweep-policy-surface-core-v1-complete.md
+      - artifacts/manifests/20260311-221148__kvtrace__bridge__bridge-policy-surface-core-v1-complete.md
+    verified: true
+
+  - id: eviction-ordering-lru-beats-fifo
+    claim: >
+      eviction-ordering replay separates LRU from FIFO at capacities 2-3
+      (LRU=0.417 vs FIFO=0.25 at cap 2; LRU=0.583 vs FIFO=0.417 at cap 3).
+    numbers:
+      capacity_2: { fifo: 0.25, lru: 0.417, lfu: 0.417 }
+      capacity_3: { fifo: 0.417, lru: 0.583, lfu: 0.583 }
+    N: 3 runs
+    claim_class: repeated
+    evidence:
+      - artifacts/manifests/20260311-221202__kvtrace__sweep__replay-capacity-sweep-policy-surface-core-v1-complete.md
+      - artifacts/manifests/20260311-221148__kvtrace__bridge__bridge-policy-surface-core-v1-complete.md
+    verified: true
+
+  - id: live-cache-hit-visibility
+    claim: >
+      Cache-on vs cache-off toggles across 5 families confirm vLLM prefix cache
+      is active and measurable via Prometheus. All cache-off runs show 0.0 hit
+      rate; cache-on runs show nonzero rates.
+    numbers:
+      aligned_prefix: { on_hit_rate: 0.5, off_hit_rate: 0.0, on_prefill_ms: 35.191, off_prefill_ms: 43.572 }
+      eviction_ordering: { on_hit_rate: 0.417, off_hit_rate: 0.0, on_prefill_ms: 18.229, off_prefill_ms: 24.259 }
+      hotset_scan: { on_hit_rate: 0.312, off_hit_rate: 0.0, on_prefill_ms: 13.946, off_prefill_ms: 16.914 }
+      locality_shift: { on_hit_rate: 0.375, off_hit_rate: 0.0, on_prefill_ms: 14.619, off_prefill_ms: 13.758 }
+      locality_return: { on_hit_rate: 0.375, off_hit_rate: 0.0, on_prefill_ms: 14.326, off_prefill_ms: 15.426 }
+    N_per_family:
+      aligned_prefix: "1 on / 1 off"
+      eviction_ordering: "3 on / 1 off"
+      hotset_scan: "2 on / 1 off"
+      locality_shift: "2 on / 2 off"
+      locality_return: "2 on / 2 off"
+    N_total: 17 runs (across 5 families)
+    claim_class: repeated
+    evidence:
+      - artifacts/manifests/20260311-200918__serve__phase3__live-cache-toggle-policy-surface-core-v1-refresh.md
+      - docs/kvscope_result_bundle.md
+    verified: true
+    note: >
+      locality-shift shows on_prefill > off_prefill (14.619 vs 13.758 ms), which
+      means the prefill improvement story is not clean for that family. The result
+      bundle notes client-side TTFT remains noisy.
+
+  - id: qualitative-block-hit-ordering
+    claim: >
+      Derived block hits show expected prefix-sharing ordering: aligned-prefix
+      (12 hits) > near-aligned-prefix (9 hits) > no-overlap-control (0 hits).
+    numbers:
+      aligned_prefix: { block_hits: 12, runs: 3 }
+      near_aligned_prefix: { block_hits: 9, runs: 3 }
+      no_overlap_control: { block_hits: 0, runs: 2 }
+    N: 8 runs (3 + 3 + 2)
+    claim_class: repeated
+    evidence:
+      - artifacts/manifests/20260311-221312__serve__phase6__benchmark-tables-policy-surface-core-v1-complete.md
+      - docs/kvscope_result_bundle.md
+    verified: true
+
+  - id: negative-control-zero-across-sweep
+    claim: >
+      no-overlap-control stays at zero replay hit rate across the entire capacity
+      sweep (capacities 1-6), confirming the negative control behaves as expected.
+    numbers:
+      all_capacities: { fifo: 0.0, lru: 0.0, lfu: 0.0 }
+    N: 2 runs
+    claim_class: repeated
+    evidence:
+      - artifacts/manifests/20260311-221202__kvtrace__sweep__replay-capacity-sweep-policy-surface-core-v1-complete.md
+    verified: true
+
+open_questions:
+  - >
+    Can the capacity crossover be reproduced with larger N and under different
+    engine configurations or models?
+  - >
+    How much does Modal cold-start and scheduling jitter affect TTFT variance?
+    Client TTFT is noisy and prevents clean end-to-end latency claims.
+  - >
+    Do derived traces (OrderedDict simulation) faithfully model vLLM's actual
+    internal block access patterns, or do scheduler/batching effects create
+    divergence?
+  - >
+    Would kernel-level KV cache instrumentation (e.g., vLLM block manager hooks)
+    change the replay policy ordering observed here?
+  - >
+    locality-shift cache-on prefill (14.619ms) slightly exceeds cache-off
+    (13.758ms). Is this measurement noise or a real interference effect?
+
+caveats:
+  - "Small N: 2-4 runs per family. All claims are directional, not statistically significant."
+  - "Traces are derived from request structure via OrderedDict simulation, not vLLM kernel instrumentation."
+  - "Single engine (vLLM), single deployment target (Modal), single model family."
+  - "Client TTFT is noisy; direct latency decomposition claims are not made."
+  - "Replay capacity sweep is an offline budget exercise, not a live cache-resizing experiment."
+
+confidence: directional
+# Confidence scale: exploratory < directional < provisional < established
+# "directional" means: consistent patterns observed across repeated small-N runs,
+# but not enough data for statistical significance or production generalization.
+
+workload_families:
+  - aligned-prefix       # Positive reuse case
+  - near-aligned-prefix  # Intermediate boundary-miss case
+  - mixed-long-short     # Overlap and interference case
+  - bursty-arrivals      # Reuse under burst pressure
+  - eviction-ordering    # Policy separation case
+  - hotset-scan          # Frequency-dominant case
+  - locality-shift       # Recency-dominant case
+  - locality-return      # Crossover case
+  - no-overlap-control   # Negative control
+
+total_artifact_runs: 38
+total_manifests: 46
+
+frozen_claims_created: "2026-03-11T22:38:16.676039Z"
+last_verified_at: "2026-03-12"
