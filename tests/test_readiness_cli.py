@@ -1,6 +1,3 @@
-# ABOUTME: Exercises the readiness CLI that future contributors and hooks will use.
-# ABOUTME: The CLI is part of the repo's trust surface because it summarizes whether the contracts still hold.
-
 import subprocess
 import sys
 import unittest

@@ -1,6 +1,3 @@
-ABOUTME: Master experimental plan consolidating all research, code reviews, and design direction for the KVScope project.
-ABOUTME: This document is the single source of truth for the current session's findings. A third research source is pending.
-
 # KVScope Experimental Plan — v1 (2026-03-12)
 
 **Status:** DRAFT — awaiting third research source before finalizing

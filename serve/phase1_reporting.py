@@ -1,6 +1,3 @@
-# ABOUTME: Summarizes the first live serving slice across multiple run artifacts.
-# ABOUTME: This module turns raw run bundles into a reviewer-legible evidence summary without manual spreadsheet work.
-
 from __future__ import annotations
 
 import json
@@ -114,8 +111,6 @@ def build_phase1_report(
 
 def render_phase1_markdown(report: dict[str, Any]) -> str:
     lines = [
-        "ABOUTME: Reviewer-facing summary for the first live KVScope serving slice.",
-        "ABOUTME: This report references raw manifests and traces rather than restating remembered results.",
         "",
         f"# {report['report_slug']}",
         "",

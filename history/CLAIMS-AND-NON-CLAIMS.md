@@ -1,6 +1,3 @@
-ABOUTME: Explicit contract for what KVScope claims and what it refuses to claim.
-ABOUTME: Prevents accidental overclaiming and raises reviewer trust.
-
 > Current claims authority.
 > Any outward-facing summary should be checked against this file.
 

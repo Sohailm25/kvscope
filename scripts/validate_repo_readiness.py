@@ -1,6 +1,3 @@
-# ABOUTME: Command-line entrypoint for implementation-readiness validation.
-# ABOUTME: This script is designed for local use, pre-commit hooks, and future automation.
-
 from __future__ import annotations
 
 import sys

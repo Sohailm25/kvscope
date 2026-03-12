@@ -1,6 +1,3 @@
-# ABOUTME: Validates the first-slice multi-run reporting path for KVScope.
-# ABOUTME: The raw runs are only reviewer-legible if we can summarize them without hand-editing numbers.
-
 import json
 import tempfile
 import unittest

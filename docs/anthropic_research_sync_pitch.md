@@ -1,6 +1,3 @@
-ABOUTME: Pitch document for a research metadata capture system at Anthropic.
-ABOUTME: Three layers: what exists today, what the demo simulates, what a pilot would build.
-
 # Narration Script
 
 > *Deliver this conversationally. Not memorized — internalize the beats and talk through them. Pause where marked.*

@@ -1,6 +1,3 @@
-# ABOUTME: Builds and queries the first SQLite-backed analysis index for KVScope.
-# ABOUTME: This module keeps the investigator layer grounded in structured artifact retrieval before MCP or agent logic is added.
-
 from __future__ import annotations
 
 import json

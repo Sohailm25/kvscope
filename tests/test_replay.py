@@ -1,6 +1,3 @@
-# ABOUTME: Validates bounded offline replay policies for KVScope.
-# ABOUTME: Replay depth only matters if new policies reveal real differences on interpretable traces.
-
 import unittest
 
 from kvtrace.replay import replay_block_sequence

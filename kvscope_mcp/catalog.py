@@ -1,6 +1,3 @@
-# ABOUTME: Read-only corpus access layer for the first KVScope MCP server.
-# ABOUTME: This layer keeps MCP tools grounded in the frozen analysis index and current evidence bundle.
-
 from __future__ import annotations
 
 import json

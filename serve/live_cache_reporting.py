@@ -1,6 +1,3 @@
-# ABOUTME: Summarizes cache-on versus cache-off serving runs using measured live metrics.
-# ABOUTME: This report keeps engine-side evidence separate from derived traces and replay conclusions.
-
 from __future__ import annotations
 
 import json
@@ -58,8 +55,6 @@ def build_live_cache_report(
 
 def render_live_cache_markdown(report: dict[str, Any]) -> str:
     lines = [
-        "ABOUTME: Reviewer-facing cache-on versus cache-off summary for KVScope.",
-        "ABOUTME: This report only makes claims grounded in measured live metrics and explicit runtime toggles.",
         "",
         f"# {report['report_slug']}",
         "",

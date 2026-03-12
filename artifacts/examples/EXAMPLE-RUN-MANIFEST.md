@@ -1,6 +1,3 @@
-ABOUTME: Human-readable pointer to the machine-checkable run manifest fixture.
-ABOUTME: Keep this file short so the real example remains the JSON artifact used by tests and tooling.
-
 # Example Run Manifest
 
 The canonical example manifest now lives in:

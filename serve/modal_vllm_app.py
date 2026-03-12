@@ -1,6 +1,3 @@
-# ABOUTME: Launches a single vLLM baseline on Modal and drives the first benchmark slice locally.
-# ABOUTME: This file is the execution entrypoint for moving KVScope from planning into real serving artifacts.
-
 from __future__ import annotations
 
 import os

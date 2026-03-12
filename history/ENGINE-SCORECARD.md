@@ -1,6 +1,3 @@
-ABOUTME: Dual-engine tractability scorecard for choosing the first serving engine.
-ABOUTME: This is not a benchmark winner table; it is an implementation-tractability and observability decision aid.
-
 # Engine Scorecard
 
 ## Decision target

@@ -1,6 +1,3 @@
-ABOUTME: Human-readable pointer to the machine-checkable kvtrace fixture.
-ABOUTME: Keep the actual example in NDJSON so replay and validation tooling can consume it directly.
-
 # Example KVTrace Events
 
 The canonical example trace now lives in:

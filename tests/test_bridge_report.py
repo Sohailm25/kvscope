@@ -1,6 +1,3 @@
-# ABOUTME: Validates the first live-to-replay bridge report for KVScope.
-# ABOUTME: The bridge summary must show that replay preserves the same directional cache story as the live slice.
-
 import json
 import tempfile
 import unittest

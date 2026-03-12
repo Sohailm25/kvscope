@@ -1,6 +1,3 @@
-# ABOUTME: Validates the repo's implementation-readiness contract and example artifact fixtures.
-# ABOUTME: This module keeps documentation claims tied to executable checks rather than prose alone.
-
 from __future__ import annotations
 
 import json

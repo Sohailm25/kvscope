@@ -1,6 +1,3 @@
-ABOUTME: Source-backed research notes for systems research preparation as of 2026-03-10.
-ABOUTME: This file captures what exists already, what is mature, and what could still be worth building.
-
 # Source Sweep
 
 ## Research Goal

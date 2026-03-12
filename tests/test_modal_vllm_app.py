@@ -1,6 +1,3 @@
-# ABOUTME: Validates workload-family selection for the Modal vLLM entrypoint.
-# ABOUTME: The live benchmark path should reject unsupported families and build the intended tokenizer-aware workload.
-
 import unittest
 
 from serve.modal_vllm_app import FUNCTION_KWARGS, build_invocation_command, build_workload

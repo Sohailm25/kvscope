@@ -1,6 +1,3 @@
-# ABOUTME: Builds the first local-only MCP server for KVScope.
-# ABOUTME: The server exposes the cleaned analysis corpus through a static read-only tool and resource surface.
-
 from __future__ import annotations
 
 from pathlib import Path

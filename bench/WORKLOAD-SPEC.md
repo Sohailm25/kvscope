@@ -1,6 +1,3 @@
-ABOUTME: Concrete workload-family specification for KVScope benchmarks.
-ABOUTME: Workloads are central to the project’s validity; this file prevents ad hoc drift.
-
 # Workload Spec
 
 ## Families

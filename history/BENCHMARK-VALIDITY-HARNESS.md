@@ -1,6 +1,3 @@
-ABOUTME: Benchmark-validity contract for KVScope experiments.
-ABOUTME: This exists because the project will fail under skeptical review if the experiments are not obviously disciplined.
-
 # Benchmark Validity Harness
 
 ## Purpose

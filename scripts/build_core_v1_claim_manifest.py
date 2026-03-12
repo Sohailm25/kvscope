@@ -1,6 +1,3 @@
-# ABOUTME: Builds the frozen Core v1 claim manifest used by the KVScope investigator layer.
-# ABOUTME: This keeps the current public claim surface explicit before the analysis and MCP layers grow.
-
 from __future__ import annotations
 
 import sys

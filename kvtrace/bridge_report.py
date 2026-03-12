@@ -1,6 +1,3 @@
-# ABOUTME: Builds the first live-to-replay bridge report for KVScope.
-# ABOUTME: The bridge report compares live workload families to offline replay without claiming causal equivalence.
-
 from __future__ import annotations
 
 import json
@@ -57,8 +54,6 @@ def build_bridge_report(
 
 def render_bridge_markdown(report: dict[str, Any]) -> str:
     lines = [
-        "ABOUTME: Reviewer-facing bridge between live serving artifacts and offline kvtrace replay.",
-        "ABOUTME: This report compares directional stories and keeps replay narrower than live claims.",
         "",
         f"# {report['report_slug']}",
         "",

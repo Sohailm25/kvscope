@@ -1,6 +1,3 @@
-ABOUTME: Architecture decision record for artifact and manifest format.
-ABOUTME: Reproducibility is part of the project’s signal, not an afterthought.
-
 # ADR-0005: Use Manifest-First Artifact Packaging
 
 ## Status

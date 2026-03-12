@@ -1,6 +1,3 @@
-ABOUTME: Readiness assessment after the hardening pass that locks scope, contracts, and first-step execution order.
-ABOUTME: Use this document to answer whether the repo is ready for implementation and what still counts as implementation risk.
-
 > Supporting decision document.
 > This file does not override the final project outline, implementation roadmap, or ADRs.
 

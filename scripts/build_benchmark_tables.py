@@ -1,6 +1,3 @@
-# ABOUTME: Builds compact benchmark tables from the current Phase 1, Phase 3, and replay reports.
-# ABOUTME: This keeps the reviewer-facing numeric summary reproducible and tied to source artifacts.
-
 from __future__ import annotations
 
 import argparse

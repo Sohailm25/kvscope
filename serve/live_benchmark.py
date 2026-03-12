@@ -1,6 +1,3 @@
-# ABOUTME: Runs live benchmark workloads against a vLLM OpenAI-compatible endpoint and packages the results.
-# ABOUTME: The first execution slice uses this module to turn one live serving baseline into reproducible artifacts.
-
 from __future__ import annotations
 
 import subprocess

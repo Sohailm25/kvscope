@@ -1,6 +1,3 @@
-ABOUTME: Module boundary for the serving baseline.
-ABOUTME: Keep this module thin: run one baseline, emit evidence, and avoid rebuilding the engine.
-
 # Serve
 
 Responsibilities:

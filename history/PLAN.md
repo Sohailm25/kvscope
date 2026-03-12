@@ -1,6 +1,3 @@
-ABOUTME: Execution plan reconciled against agent-1 and agent-2 research outputs.
-ABOUTME: Keep the project centered on one falsifiable systems thesis and cut anything that weakens measurement quality.
-
 > Historical planning note: this file is preserved for context.
 > Current implementation authority lives in `README.md`, `history/FINAL-PROJECT-OUTLINE.md`, `history/IMPLEMENTATION.md`, and `history/DOCUMENT-MAP.md`.
 

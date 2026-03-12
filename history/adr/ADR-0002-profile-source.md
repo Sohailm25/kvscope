@@ -1,6 +1,3 @@
-ABOUTME: Architecture decision record for sampled-profile input selection.
-ABOUTME: The project needs time-preserving profile data; this ADR locks the primary path.
-
 # ADR-0002: Use Linux perf As The Primary Profile Source
 
 ## Status

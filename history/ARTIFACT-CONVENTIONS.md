@@ -1,6 +1,3 @@
-ABOUTME: Artifact and result-layout conventions for KVScope.
-ABOUTME: The repo should produce reproducible outputs, not remembered numbers or screenshots without provenance.
-
 # Artifact Conventions
 
 ## Root Layout

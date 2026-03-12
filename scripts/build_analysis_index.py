@@ -1,6 +1,3 @@
-# ABOUTME: Builds the first local SQLite analysis index for the KVScope investigator layer.
-# ABOUTME: This script materializes the current artifact corpus into a queryable store for structured and text search.
-
 from __future__ import annotations
 
 import sys

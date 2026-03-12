@@ -1,6 +1,3 @@
-ABOUTME: Detailed build spec for the post-core KVScope investigator layer.
-ABOUTME: This document is current implementation authority for turning the artifact lab into an agent-usable AI observability tool.
-
 > Current build authority for the investigator layer.
 > If this file conflicts with older planning docs, trust this file and `history/DOCUMENT-MAP.md`.
 

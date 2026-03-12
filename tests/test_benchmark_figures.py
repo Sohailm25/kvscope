@@ -1,6 +1,3 @@
-# ABOUTME: Validates the generated benchmark-figure bundle for KVScope.
-# ABOUTME: These tests keep reviewer-facing figures tied to source reports and run provenance instead of becoming ad hoc screenshots.
-
 import json
 import tempfile
 import unittest

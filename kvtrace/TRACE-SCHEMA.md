@@ -1,6 +1,3 @@
-ABOUTME: Versioned event schema for replay-capable cache traces.
-ABOUTME: The schema must preserve enough block lifecycle detail to support honest policy replay and live-to-replay comparison.
-
 # KVTrace Schema v2
 
 ## Purpose

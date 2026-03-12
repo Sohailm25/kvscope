@@ -1,6 +1,3 @@
-ABOUTME: Concrete implementation roadmap for KVScope after the pre-implementation hardening pass.
-ABOUTME: This document should be actionable enough to start coding without reopening project identity or scope.
-
 > Current execution authority.
 > If planning-era docs conflict with this file, trust this file.
 

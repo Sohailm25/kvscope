@@ -1,6 +1,3 @@
-# ABOUTME: Writes benchmark manifests and result bundles for KVScope runs.
-# ABOUTME: Artifact quality is part of the product because the repo's claims depend on provenance.
-
 from __future__ import annotations
 
 import json

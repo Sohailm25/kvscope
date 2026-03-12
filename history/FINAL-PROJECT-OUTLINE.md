@@ -1,6 +1,3 @@
-ABOUTME: Final project brief that reconciles production realism, observability value, and scope discipline.
-ABOUTME: This is the main decision document for what KVScope is actually building and what must earn its place.
-
 > Current top-level project authority.
 > If planning-era docs conflict with this file, trust this file.
 

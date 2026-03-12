@@ -1,6 +1,3 @@
-# ABOUTME: Generates a small PNG figure bundle from existing KVScope summary reports.
-# ABOUTME: The figures are intentionally narrow: they clarify live cache observability and replay-policy tradeoffs without becoming a second source of truth.
-
 from __future__ import annotations
 
 import json
@@ -78,8 +75,6 @@ def build_benchmark_figures_report(
 
 def render_benchmark_figures_markdown(report: dict[str, Any]) -> str:
     lines = [
-        "ABOUTME: Reviewer-facing figure bundle generated from the current KVScope summaries.",
-        "ABOUTME: These figures are intentionally narrow and exist to clarify signal that already exists in the source reports.",
         "",
         f"# {report['report_slug']}",
         "",

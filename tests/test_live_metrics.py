@@ -1,6 +1,3 @@
-# ABOUTME: Validates parsing and summarizing the live Prometheus metrics we scrape from vLLM.
-# ABOUTME: This keeps the cache-observability slice grounded in actual runtime signals instead of ad-hoc text parsing.
-
 import unittest
 
 from serve.live_metrics import build_live_metrics_artifact, parse_metrics_snapshot

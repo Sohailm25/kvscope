@@ -1,6 +1,3 @@
-# ABOUTME: Runs the first local-only MCP server for KVScope over stdio.
-# ABOUTME: This keeps the MCP transport entrypoint separate from the server construction logic for testing.
-
 from __future__ import annotations
 
 import sys

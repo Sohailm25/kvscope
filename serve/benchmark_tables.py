@@ -1,6 +1,3 @@
-# ABOUTME: Builds compact benchmark tables from the current Phase 1, Phase 3, and bridge artifacts.
-# ABOUTME: This keeps reviewer-facing numeric summaries generated from artifacts instead of copied into prose.
-
 from __future__ import annotations
 
 import json
@@ -56,8 +53,6 @@ def build_benchmark_tables_report(
 
 def render_benchmark_tables_markdown(report: dict[str, Any]) -> str:
     lines = [
-        "ABOUTME: Compact benchmark tables generated from the current KVScope artifact set.",
-        "ABOUTME: This file turns repeated serving, live cache, and replay summaries into reviewer-legible tables.",
         "",
         f"# {report['report_slug']}",
         "",

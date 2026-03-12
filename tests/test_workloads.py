@@ -1,6 +1,3 @@
-# ABOUTME: Validates the benchmark workload generator for the first execution slice.
-# ABOUTME: These tests protect the aligned-prefix and no-overlap cases that the repo's evidence story depends on.
-
 import json
 import tempfile
 import unittest

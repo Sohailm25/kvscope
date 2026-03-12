@@ -1,6 +1,3 @@
-# ABOUTME: Builds replay-capacity sweep reports from live-derived KVScope traces.
-# ABOUTME: A capacity sweep is useful because policy differences can appear, disappear, or reverse as cache budget changes.
-
 from __future__ import annotations
 
 import json
@@ -64,8 +61,6 @@ def build_replay_capacity_sweep_report(
 
 def render_replay_capacity_sweep_markdown(report: dict[str, Any]) -> str:
     lines = [
-        "ABOUTME: Reviewer-facing replay-capacity sweep for KVScope.",
-        "ABOUTME: This report shows where replay policies separate, collapse, or first become useful as cache budget changes.",
         "",
         f"# {report['report_slug']}",
         "",

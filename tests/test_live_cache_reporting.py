@@ -1,6 +1,3 @@
-# ABOUTME: Validates the reviewer-facing report for live cache-on versus cache-off comparisons.
-# ABOUTME: This protects the measured cache observability slice from becoming a one-off notebook artifact.
-
 import json
 import tempfile
 import unittest

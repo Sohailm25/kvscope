@@ -1,6 +1,3 @@
-# ABOUTME: Builds workload artifacts whose prefix structure is aligned under a real tokenizer.
-# ABOUTME: These helpers exist so the live vLLM benchmark path can reason about actual token boundaries instead of whitespace approximations.
-
 from __future__ import annotations
 
 from typing import Protocol

@@ -1,6 +1,3 @@
-ABOUTME: Defines the bridge experiment connecting live serving behavior to offline kvtrace replay.
-ABOUTME: This is a high-signal upgrade because it answers the obvious criticism that replay is detached from reality.
-
 # Live-To-Replay Bridge
 
 ## Purpose

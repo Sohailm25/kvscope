@@ -1,6 +1,3 @@
-# ABOUTME: Validates the first SQLite-backed analysis index for the KVScope investigator layer.
-# ABOUTME: These tests ensure the repo can search structured run facts and text-backed findings without manual file scanning.
-
 import tempfile
 import unittest
 from pathlib import Path

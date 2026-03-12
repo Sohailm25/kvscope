@@ -1,6 +1,3 @@
-# ABOUTME: Frozen Core v1 claim registry for the current KVScope evidence surface.
-# ABOUTME: This keeps the current outward-facing claims explicit, classified, and tied to source artifacts.
-
 from __future__ import annotations
 
 import json
@@ -174,8 +171,6 @@ def build_core_v1_claim_manifest(*, repo_root: Path) -> dict[str, Any]:
 
 def render_core_v1_claim_manifest_markdown(manifest: dict[str, Any]) -> str:
     lines = [
-        "ABOUTME: Frozen Core v1 claim surface for the current KVScope evidence set.",
-        "ABOUTME: This file classifies which current claims are repeated, single-run, or exploratory before the investigator layer grows.",
         "",
         "# Core v1 Claim Manifest",
         "",

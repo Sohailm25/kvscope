@@ -1,6 +1,3 @@
-ABOUTME: Reviewer-facing result bundle summarizing KVScope findings with evidence and caveats.
-ABOUTME: Leads with the capacity crossover finding, then walks through supporting evidence.
-
 # KVScope Result Bundle
 
 ## The Headline Finding

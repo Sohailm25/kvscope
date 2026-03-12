@@ -1,6 +1,3 @@
-# ABOUTME: Defines the serving runtime dependency contract for the first live Modal baseline.
-# ABOUTME: These pins keep the vLLM image on a tokenizer stack that is known to start correctly.
-
 from __future__ import annotations
 
 

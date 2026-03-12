@@ -1,6 +1,3 @@
-# ABOUTME: Validates the first local-only MCP server for KVScope.
-# ABOUTME: These tests keep the MCP slice grounded in the frozen current-evidence corpus and structured tool outputs.
-
 import unittest
 from pathlib import Path
 

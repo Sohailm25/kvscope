@@ -1,6 +1,3 @@
-# ABOUTME: Generates the first benchmark workloads and persists them as JSONL artifacts.
-# ABOUTME: The aligned-prefix and no-overlap families are the minimum cases needed to make reuse claims honest.
-
 from __future__ import annotations
 
 import json

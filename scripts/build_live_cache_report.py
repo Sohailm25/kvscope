@@ -1,6 +1,3 @@
-# ABOUTME: Builds a live cache-on versus cache-off report from explicit KVScope run directories.
-# ABOUTME: This keeps phase-three evidence reproducible and separate from derived or replay-heavy summaries.
-
 from __future__ import annotations
 
 import argparse

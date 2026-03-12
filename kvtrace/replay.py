@@ -1,6 +1,3 @@
-# ABOUTME: Implements the first bounded offline cache-policy replay helpers for KVScope.
-# ABOUTME: This simulator replays block-lookup sequences from kvtrace without claiming exact live-engine equivalence.
-
 from __future__ import annotations
 
 import json

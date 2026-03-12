@@ -1,6 +1,3 @@
-ABOUTME: Documents the key design decisions in KVScope and why they were made.
-ABOUTME: Intended for reviewers who want to understand the reasoning, not just the code.
-
 # Design Rationale
 
 This document explains the key decisions behind KVScope's architecture. Each section covers what was chosen, what was not, and why.

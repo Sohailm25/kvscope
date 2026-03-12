@@ -1,6 +1,3 @@
-# ABOUTME: Validates the manifest and result bundle writer for live benchmark runs.
-# ABOUTME: The first execution slice is only credible if every run lands in the documented artifact layout.
-
 import json
 import tempfile
 import unittest

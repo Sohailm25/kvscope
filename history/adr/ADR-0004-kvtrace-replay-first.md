@@ -1,6 +1,3 @@
-ABOUTME: Architecture decision record for making kvtrace replay a first-class path instead of a shameful fallback.
-ABOUTME: This choice is about implementation leverage and claim discipline.
-
 # ADR-0004: Prefer Replay-First Policy Evaluation
 
 ## Status

@@ -1,6 +1,3 @@
-ABOUTME: External research note for the KVScope investigator-layer plan.
-ABOUTME: This captures the current role and ecosystem signals that justify shifting from benchmark-only depth to an investigation system.
-
 # KVScope Investigator Research Note
 
 ## Purpose

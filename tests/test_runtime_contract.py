@@ -1,6 +1,3 @@
-# ABOUTME: Guards the serving runtime dependency contract for the first live Modal slice.
-# ABOUTME: The vLLM baseline is only credible if we keep known-bad dependency drift out of the image.
-
 import unittest
 
 from serve.runtime_contract import (

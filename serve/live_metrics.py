@@ -1,6 +1,3 @@
-# ABOUTME: Scrapes and normalizes the subset of vLLM Prometheus metrics used by KVScope.
-# ABOUTME: This keeps live cache-observability evidence machine-checkable instead of buried in raw text logs.
-
 from __future__ import annotations
 
 from datetime import UTC, datetime

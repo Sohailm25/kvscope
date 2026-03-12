@@ -1,6 +1,3 @@
-ABOUTME: Frozen Core v1 claim surface for the current KVScope evidence set.
-ABOUTME: Classifies which claims are repeated, single-run, or exploratory with source references.
-
 # Core v1 Claim Manifest
 
 - Created: `2026-03-11T22:38:16.676039Z`

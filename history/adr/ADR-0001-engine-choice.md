@@ -1,6 +1,3 @@
-ABOUTME: Architecture decision record for the initial serving engine choice.
-ABOUTME: This records the first implementation baseline, not a universal winner.
-
 # ADR-0001: Start With vLLM For Phase 0
 
 ## Status

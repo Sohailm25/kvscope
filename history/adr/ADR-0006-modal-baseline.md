@@ -1,6 +1,3 @@
-ABOUTME: Architecture decision record for the initial deployment baseline.
-ABOUTME: This captures why Modal is acceptable for the first implementation and how claims stay bounded.
-
 # ADR-0006: Use Modal As The Initial Deployment Baseline
 
 ## Status

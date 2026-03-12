@@ -1,6 +1,3 @@
-# ABOUTME: Pydantic models for the first KVScope MCP tool surface.
-# ABOUTME: These models keep tool outputs structured and bounded for later agent and eval layers.
-
 from __future__ import annotations
 
 from typing import Any

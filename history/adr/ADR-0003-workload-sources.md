@@ -1,6 +1,3 @@
-ABOUTME: Architecture decision record for workload and corpus sources.
-ABOUTME: Fixing sources early prevents scope drift and cherry-picked workloads.
-
 # ADR-0003: Lock Initial Workload Sources
 
 ## Status

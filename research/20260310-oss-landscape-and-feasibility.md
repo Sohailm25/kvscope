@@ -1,6 +1,3 @@
-ABOUTME: Research memo on what already exists in open source and whether a combined project would look novel or contrived.
-ABOUTME: Favor bluntness over optimistic positioning so the final project direction stays high-signal.
-
 # OSS Landscape And Feasibility
 
 _Date anchor: March 10, 2026._

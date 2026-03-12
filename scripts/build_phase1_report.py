@@ -1,6 +1,3 @@
-# ABOUTME: Builds a first-slice multi-run report from explicit KVScope run directories.
-# ABOUTME: This script keeps early evidence packaging reproducible and tied to raw run artifacts.
-
 from __future__ import annotations
 
 import argparse

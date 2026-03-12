@@ -1,6 +1,3 @@
-# ABOUTME: Builds a replay-capacity sweep report from explicit KVScope run directories.
-# ABOUTME: This keeps capacity-sensitive replay evidence reproducible and derived from raw run artifacts instead of manual tables.
-
 from __future__ import annotations
 
 import argparse

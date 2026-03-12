@@ -1,6 +1,3 @@
-# ABOUTME: Validates client lifecycle handling in the live benchmark path.
-# ABOUTME: The first serving slice should shut down cleanly after requests complete.
-
 import time
 import unittest
 

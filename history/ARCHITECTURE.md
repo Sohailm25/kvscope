@@ -1,6 +1,3 @@
-ABOUTME: Project architecture for KVScope after reconciling research and project direction.
-ABOUTME: This is a decision document, not a marketing artifact; prefer what is defensible over what sounds ambitious.
-
 > Historical architecture synthesis: useful for context, but not the top source of truth.
 > Use `history/FINAL-PROJECT-OUTLINE.md`, module specs, ADRs, and `history/DOCUMENT-MAP.md` for current implementation authority.
 

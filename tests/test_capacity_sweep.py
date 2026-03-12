@@ -1,6 +1,3 @@
-# ABOUTME: Validates the replay-capacity sweep report for KVScope.
-# ABOUTME: Capacity sweeps matter because one-capacity policy wins can hide where policies separate, collapse, or only win in a narrow band.
-
 import json
 import tempfile
 import unittest

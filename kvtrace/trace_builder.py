@@ -1,6 +1,3 @@
-# ABOUTME: Builds derived kvtrace events from benchmark workloads before deeper engine hooks exist.
-# ABOUTME: The source_kind on these events must stay honest because they are derived from workload structure, not raw engine internals.
-
 from __future__ import annotations
 
 import hashlib

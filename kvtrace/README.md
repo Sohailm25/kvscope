@@ -1,6 +1,3 @@
-ABOUTME: Module boundary for trace-driven cache-policy replay.
-ABOUTME: This module matters only if the trace contract is strong enough to support honest replay claims.
-
 # KVTrace
 
 Responsibilities:

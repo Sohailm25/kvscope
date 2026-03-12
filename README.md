@@ -1,6 +1,3 @@
-ABOUTME: Repository entrypoint for KVScope — a cache-aware AI observability lab.
-ABOUTME: Leads with findings, describes system architecture, and points to reproduction steps.
-
 # KVScope
 
 A cache-aware AI observability lab studying KV cache policy behavior on vLLM serving workloads.

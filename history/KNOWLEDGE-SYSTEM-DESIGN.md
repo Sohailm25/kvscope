@@ -1,6 +1,3 @@
-ABOUTME: Design document for a Claude-assisted research metadata layer.
-ABOUTME: Synthesizes three independent research sources into a buildable proposal.
-
 # Research Knowledge System — Design Document
 
 ## Problem Statement

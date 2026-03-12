@@ -1,6 +1,3 @@
-ABOUTME: Explains the purpose of persisted artifacts in KVScope.
-ABOUTME: Artifacts are part of the product because the repo's claims are only as strong as their provenance.
-
 # Artifacts
 
 This directory stores:

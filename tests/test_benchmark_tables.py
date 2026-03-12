@@ -1,6 +1,3 @@
-# ABOUTME: Validates the compact benchmark-table artifact built from the current serving, live-cache, and bridge summaries.
-# ABOUTME: The reviewer-facing bundle is stronger if the key numbers are generated into stable tables instead of repeated in prose.
-
 import json
 import tempfile
 import unittest

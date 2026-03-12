@@ -1,6 +1,3 @@
-ABOUTME: Primary-source synthesis mapping papers and official system docs to concrete project design decisions.
-ABOUTME: Use this file to justify scope cuts, benchmark choices, and implementation sequencing with explicit evidence.
-
 # Paper-To-Plan Synthesis
 
 _Date anchor: March 10, 2026._

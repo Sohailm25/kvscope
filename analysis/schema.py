@@ -1,6 +1,3 @@
-# ABOUTME: SQLite schema for the first KVScope investigator corpus index.
-# ABOUTME: The schema is intentionally small and biased toward structured retrieval plus FTS-backed text search.
-
 from __future__ import annotations
 
 

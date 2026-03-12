@@ -1,6 +1,3 @@
-# ABOUTME: Validates tokenizer-aware workload construction for live vLLM runs.
-# ABOUTME: These tests ensure the real benchmark path aligns prefixes under the model tokenizer, not a toy approximation.
-
 import unittest
 
 from bench.model_workloads import (

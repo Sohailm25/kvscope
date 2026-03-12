@@ -1,6 +1,3 @@
-ABOUTME: Source-of-truth map for the repo.
-ABOUTME: Incoming agents should read this first to avoid treating historical planning notes or exploratory research as current authority.
-
 # Document Map
 
 ## Purpose

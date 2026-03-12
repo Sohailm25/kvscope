@@ -1,6 +1,3 @@
-ABOUTME: Research-grounded experiment design for the serving, cache-policy, and profile-to-phase parts of the project.
-ABOUTME: This file replaces generic benchmark advice with concrete workload, metric, and validation requirements.
-
 > Current experiment authority.
 > If earlier notes conflict with this file, trust this file.
 

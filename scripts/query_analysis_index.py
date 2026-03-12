@@ -1,6 +1,3 @@
-# ABOUTME: Queries the first local SQLite analysis index for KVScope.
-# ABOUTME: This is a thin CLI wrapper so structured and text search are usable before MCP exists.
-
 from __future__ import annotations
 
 import argparse

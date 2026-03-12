@@ -1,6 +1,3 @@
-# ABOUTME: Validates the frozen Core v1 claim manifest used by the investigator layer.
-# ABOUTME: These tests keep the current claim surface explicit and machine-checkable.
-
 import tempfile
 import unittest
 from pathlib import Path

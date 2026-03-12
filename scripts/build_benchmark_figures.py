@@ -1,6 +1,3 @@
-# ABOUTME: Builds a small reviewer-facing PNG figure bundle from existing KVScope summary reports.
-# ABOUTME: This keeps figures reproducible and tied to report JSONs instead of becoming manual screenshots.
-
 from __future__ import annotations
 
 import argparse

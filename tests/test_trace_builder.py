@@ -1,6 +1,3 @@
-# ABOUTME: Validates derived kvtrace emission for the first benchmark workloads.
-# ABOUTME: These tests ensure the replay path has honest block lifecycle data before any live engine hooks exist.
-
 import unittest
 
 from bench.workloads import (

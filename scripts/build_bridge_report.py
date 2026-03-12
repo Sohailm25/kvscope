@@ -1,6 +1,3 @@
-# ABOUTME: Builds the first live-to-replay bridge report from explicit KVScope run directories.
-# ABOUTME: This script keeps replay evidence packaging reproducible and tied to raw run artifacts.
-
 from __future__ import annotations
 
 import argparse

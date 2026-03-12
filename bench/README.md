@@ -1,6 +1,3 @@
-ABOUTME: Module boundary for workload generation and benchmark execution.
-ABOUTME: Benchmarks are part of the product because they determine whether the claims are credible.
-
 # Bench
 
 Responsibilities:

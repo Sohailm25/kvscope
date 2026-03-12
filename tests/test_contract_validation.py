@@ -1,6 +1,3 @@
-# ABOUTME: Validates the machine-checkable contracts that make the repo implementation-ready.
-# ABOUTME: These tests should fail if example artifacts drift away from the documented readiness contract.
-
 import unittest
 from pathlib import Path
 
