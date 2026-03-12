@@ -19,3 +19,6 @@ artifacts/runs/
 # Local tooling
 .tldrignore
 $TMP_DB
+
+# Private docs
+docs/anthropic_research_sync_pitch.md
